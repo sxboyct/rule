@@ -5,6 +5,10 @@
 DOMAIN-SUFFIX,time.windows.com
 DOMAIN-SUFFIX,lanzov.com
 DOMAIN-SUFFIX,hao123.com
+- DOMAIN-KEYWORD,wogg,DIRECT
+- DOMAIN-KEYWORD,musixmatch,🇸🇬 加坡节点
+- DOMAIN-SUFFIX,nu13.eu.org,DIRECT
+- DOMAIN-SUFFIX,xpanpan,DIRECT
 
 # 域名关键字匹配
 DOMAIN-KEYWORD,baidu
