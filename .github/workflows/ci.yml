@@ -1,6 +1,7 @@
 name: update file to ks
 on:
-  workflow_dispatch:  # 手动触发
+  schedule:
+    - cron: '*/15 * * * *'  # 每天15分钟触发
 jobs:
   sync:
     runs-on: ubuntu-latest
