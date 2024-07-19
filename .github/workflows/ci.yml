@@ -1,0 +1,18 @@
+name: update file to ks
+
+on:
+  workflow_dispatch:  # 手动触发
+
+jobs:
+  sync:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: bash
+        run: |
+          cd ${{ github.workspace }}  #切换到工作根目录
+          file="www.json"   #文件路径
+          curl -s https://www.xn--sss604efuw.com/jm/?url=http://tvbox.xn--4kq62z5rby2qupq9ub.xyz >$file
+          id=0   #凯速文件夹id  这里是根目录
+          token="9618-f26640a371fc426d80a51d7a0476aed3"  #凯速token
+          curl https://upload.kstore.space/upload/$id?access_token=$token -F "file=@$file"
