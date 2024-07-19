@@ -1,16 +1,12 @@
 name: update file to ks
-
 on:
   workflow_dispatch:  # 手动触发
-
 jobs:
   sync:
     runs-on: ubuntu-latest
-
     steps:
       - name: Checkout code
         uses: actions/checkout@v2
-
       - name: Run bash script
         run: |
           cd ${{ github.workspace }}  # 切换到工作根目录
